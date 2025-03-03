@@ -19,5 +19,5 @@ $plugin->version   = 2025030300;
 $plugin->requires  = 2020061500;
 $plugin->component = 'filter_mermaid';
 $plugin->maturity = MATURITY_BETA;
-$plugin->release = 'v0.1.0';
+$plugin->release = 'v0.2.0';
 $plugin->dependencies = [];

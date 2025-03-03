@@ -31,7 +31,7 @@ class filter_mermaid extends moodle_text_filter {
             }
 
             $text .= "<script type=\"module\">
-                import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+                import mermaid from '/filter/mermaid/javascript/mermaid.esm.min.mjs';
                 mermaid.initialize({ startOnLoad: true });
               </script>";
         }
