@@ -15,9 +15,9 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 defined('MOODLE_INTERNAL') || die();
-$plugin->version   = 2025032700;
+$plugin->version   = 2025040400;
 $plugin->requires  = 2020061500;
 $plugin->component = 'filter_mermaid';
 $plugin->maturity = MATURITY_BETA;
-$plugin->release = 'v0.2.1';
+$plugin->release = 'v0.2.2';
 $plugin->dependencies = [];
