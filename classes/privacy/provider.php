@@ -14,5 +14,12 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
-$string['filtername'] = 'Mermaid';
-$string['privacy:metadata'] = 'The Mermaid filter does not store any personal data.';
+namespace filter_mermaid\privacy;
+
+class provider implements \core_privacy\local\metadata\null_provider {
+
+    public static function get_reason(): string
+    {
+        return 'privacy:metadata';
+    }
+}
