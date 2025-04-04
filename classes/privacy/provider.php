@@ -21,7 +21,7 @@ namespace filter_mermaid\privacy;
  *
  * @package   filter_mermaid
  * @copyright 2025 Lukas OTERO--MELEDO
- * @license https://www.apache.org/licenses/LICENSE-2.0
+ * @license https://www.gnu.org/licenses/gpl-3.0.en.html
  */
 class provider implements \core_privacy\local\metadata\null_provider {
 
