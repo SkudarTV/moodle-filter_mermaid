@@ -4,7 +4,7 @@ Plugin filter to create Mermaid diagrams from text ([Mermaid](http://mermaid.js.
 It uses [Mermaid](https://mermaid.js.org/) tool made by Knut Sveidqvist.
 Complete syntax is available at [http://mermaid.js.org/](http://mermaid.js.org/).
 
-This plugin is distributed under [MIT](https://opensource.org/license/mit) licence.
+This plugin is distributed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license.
 
 ## Use:
 Add Mermaid format text between [mermaid]...[/mermaid]
