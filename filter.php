@@ -14,7 +14,21 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
+/**
+ * Main filter class of the plugin
+ *
+ * @package   filter_mermaid
+ * @copyright 2025 Lukas OTERO--MELEDO
+ * @license https://www.apache.org/licenses/LICENSE-2.0
+ */
 class filter_mermaid extends moodle_text_filter {
+
+    /**
+     * Get the formated text with Mermaid diagrams
+     * @param string $text
+     * @param array $options
+     * @return string
+     */
     public function filter($text, array $options = []) {
         global $PAGE, $CFG;
 

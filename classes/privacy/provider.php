@@ -16,10 +16,20 @@
 
 namespace filter_mermaid\privacy;
 
+/**
+ * This plugin does not store any personal user data
+ *
+ * @package   filter_mermaid
+ * @copyright 2025 Lukas OTERO--MELEDO
+ * @license https://www.apache.org/licenses/LICENSE-2.0
+ */
 class provider implements \core_privacy\local\metadata\null_provider {
 
-    public static function get_reason(): string
-    {
+    /**
+     * Get the language string identifier with the component's language
+     * file to explain why this plugin stores no data.
+     */
+    public static function get_reason(): string {
         return 'privacy:metadata';
     }
 }
