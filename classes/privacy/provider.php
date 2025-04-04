@@ -14,12 +14,21 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
+/**
+ * @package   filter_mermaid
+ * @copyright 2025 Lukas OTERO--MELEDO
+ * @license https://www.apache.org/licenses/LICENSE-2.0
+ */
+
 namespace filter_mermaid\privacy;
 
 class provider implements \core_privacy\local\metadata\null_provider {
 
-    public static function get_reason(): string
-    {
+    /**
+     * Get the language string identifier with the component's language
+     * file to explain why this plugin stores no data.
+     */
+    public static function get_reason(): string {
         return 'privacy:metadata';
     }
 }
