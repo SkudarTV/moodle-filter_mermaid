@@ -15,6 +15,8 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
+ * Version file of the plugin
+ *
  * @package   filter_mermaid
  * @copyright 2025 Lukas OTERO--MELEDO
  * @license https://www.apache.org/licenses/LICENSE-2.0

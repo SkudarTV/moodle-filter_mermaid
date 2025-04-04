@@ -19,8 +19,11 @@
  * @copyright 2025 Lukas OTERO--MELEDO
  * @license https://www.apache.org/licenses/LICENSE-2.0
  */
-
 class filter_mermaid extends moodle_text_filter {
+
+    /**
+     * Get the formated text with Mermaid diagrams
+     */
     public function filter($text, array $options = []) {
         global $PAGE, $CFG;
 

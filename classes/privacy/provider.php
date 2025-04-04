@@ -14,14 +14,15 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
+namespace filter_mermaid\privacy;
+
 /**
+ * This plugin does not store any personal user data
+ *
  * @package   filter_mermaid
  * @copyright 2025 Lukas OTERO--MELEDO
  * @license https://www.apache.org/licenses/LICENSE-2.0
  */
-
-namespace filter_mermaid\privacy;
-
 class provider implements \core_privacy\local\metadata\null_provider {
 
     /**
