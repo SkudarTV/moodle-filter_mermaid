@@ -23,9 +23,9 @@
  */
 
 defined('MOODLE_INTERNAL') || die();
-$plugin->version   = 2025040700;
+$plugin->version   = 2025040701;
 $plugin->requires  = 2020061500;
 $plugin->component = 'filter_mermaid';
 $plugin->maturity = MATURITY_BETA;
-$plugin->release = 'v0.2.8';
+$plugin->release = 'v0.2.9';
 $plugin->dependencies = [];
