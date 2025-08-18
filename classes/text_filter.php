@@ -14,6 +14,10 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
+namespace filter_mermaid;
+
+use moodle_text_filter;
+
 /**
  * Main filter class of the plugin
  *
@@ -21,7 +25,7 @@
  * @copyright 2025 Lukas OTERO--MELEDO
  * @license https://www.gnu.org/licenses/gpl-3.0.en.html
  */
-class filter_mermaid extends moodle_text_filter {
+class text_filter extends moodle_text_filter {
 
     /**
      * Get the formated text with Mermaid diagrams
