@@ -21,7 +21,12 @@
  * @copyright 2025 Lukas OTERO--MELEDO
  * @license https://www.gnu.org/licenses/gpl-3.0.en.html
  */
-class filter_mermaid extends moodle_text_filter {
+
+namespace filter_mermaid;
+
+use moodle_text_filter;
+
+class text_filter extends moodle_text_filter {
 
     /**
      * Get the formated text with Mermaid diagrams
