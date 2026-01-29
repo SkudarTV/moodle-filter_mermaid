@@ -26,7 +26,6 @@ use moodle_text_filter;
  * @license https://www.gnu.org/licenses/gpl-3.0.en.html
  */
 class text_filter extends moodle_text_filter {
-
     /**
      * Get the formated text with Mermaid diagrams
      * @param string $text
@@ -45,13 +44,15 @@ class text_filter extends moodle_text_filter {
         if ($result > 0) {
             foreach ($matches[2] as $idx => $code) {
                 $code = strip_tags(str_replace('<br>', PHP_EOL, $code));
-                $text = str_replace($matches[0][$idx], '<pre class="mermaid">'.$code.'</pre>', $text);
+                $text = str_replace($matches[0][$idx], '<pre class="mermaid">' . $code . '</pre>', $text);
             }
 
-            $text .= "<script type=\"module\">
-                import mermaid from '".$CFG->wwwroot."/filter/mermaid/javascript/mermaid.esm.min.mjs';
-                mermaid.initialize({ startOnLoad: true });
-              </script>";
+            $text .= <<<HTML
+                <script type="module">
+                    import mermaid from '$CFG->wwwroot/filter/mermaid/javascript/mermaid.esm.min.mjs';
+                    mermaid.initialize({ startOnLoad: true });
+                </script>
+            HTML;
         }
         return $text;
     }

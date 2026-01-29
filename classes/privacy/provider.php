@@ -24,7 +24,6 @@ namespace filter_mermaid\privacy;
  * @license https://www.gnu.org/licenses/gpl-3.0.en.html
  */
 class provider implements \core_privacy\local\metadata\null_provider {
-
     /**
      * Get the language string identifier with the component's language
      * file to explain why this plugin stores no data.
